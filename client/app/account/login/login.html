@@ -22,6 +22,8 @@
               <div ng-message="server">{{errorMessage.password}}</div>
             </div>
           </div>
+          
+          <p class="help-block">{{ vm.errors.other }}</p>
 
           <button type="submit" class="btn btn-block btn-success" ng-disabled="loginForm.$invalid">Log in</button>
 
