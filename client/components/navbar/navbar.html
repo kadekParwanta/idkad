@@ -23,7 +23,7 @@
         <li ng-show="nav.isLoggedIn()"><a ui-sref="profile">Hello {{ nav.getCurrentUser().name }}</a></li>
           <li ng-show="nav.isLoggedIn()">
             <a ui-sref="profile">
-            <img style="object-fit: cover; width:40px; height:40px; border-radius:50%" ng-src="{{ nav.getCurrentUser().picture.data.url }}" />
+            <img style="object-fit: cover; width:40px; height:40px; border-radius:50%" ng-src="{{ nav.getCurrentUser().picture }}" />
             </a>
           </li>
         <li ng-show="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="settings"><span class="glyphicon glyphicon-cog"></span></a></li>
