@@ -25,7 +25,7 @@ export function setup(User, config) {
           role: 'user',
           provider: 'facebook',
           facebook: profile._json,
-          picture:profile.picture.data.url
+          picture:profile.picture
         });
         user.save()
           .then(user => done(null, user))
